@@ -1,0 +1,112 @@
+html>
+<head>
+    <title>Nikolas Saputra KELAS 12</title>
+</head>
+<link rel="stylesheet" href="tyle.css">
+<style>/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input, select, textarea {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}</style>
+<body>
+
+    <h1>NIKO KUDAMAS STORE</h1>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        Nama :<br>
+        <input type="text" name="nama_produk" required><br><br>
+
+        jenis ban:<br>
+        <select name="kategori" required>
+            <option value="" disabled selected>Pilih Kategori</option>
+            <option value="BAN BRIGDSTONE">BAN BRIGDSTONE </option>
+            <option value="BAN DUNLOP">BAN DUNLOP</option>
+            <option value="BAN GT">BAN GT</option>
+            <option value="BAN PIRELLI">BAN PIRELLI</option>
+            <option value="BAN CONTINENTAL">BAN CONTINENTAL</option>
+            <option value="BAN YOKOHAMA">BAN YOKOHAMA</option>
+        </select><br><br>
+       <label>merk mobil:</label>
+        <select name="kategori" required>
+            <option value="" disabled selected>Pilih Kategori</option>
+            <option value="MOBIL MITSUBISHI XPANDER">MOBIL MITSUBISHI XPANDER </option>
+            <option value="MOBIL BMW 530">MOBIL BMW 530</option>
+            <option value="MOBIL HONDA CIVIC">MOBIL HONDA CIVIC</option>
+            <option value="MOBIL TOYOTA INNOVA">MOBIL TOYOTA INNOVA</option>
+            <option value="MOBIL DAIHATSU XENIA">MOBIL DAIHATSU XENIA</option>
+            <option value="MOBIL HONDA BRIO">MOBIL HONDA BRIO</option>
+          </select><br><br>
+
+        nomer hp:<br>
+        <input type="number" name="harga" required><br><br>
+
+        pesan untuk penjual:<br>
+        <textarea name="deskripsi" required></textarea><br><br>
+
+        jumlah pemesanan:<br>
+        <input type="number" name="stok" required><br><br>
+
+        <button type="submit" name="submit">Tambah Produk</button>
+    </form>
+
+</body>
+</html>
